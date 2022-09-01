@@ -3,7 +3,7 @@ def broken_search(array, search_value):
     start = 0
     end = len(array) - 1
     while start <= end:
-        middle = start + end // 2
+        middle = start + (end-start) // 2
         guess = array[middle]
         if search_value == guess:
             return middle
